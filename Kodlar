@@ -1,0 +1,11 @@
+import urllib.request
+#import ile gerekli kütüphaneyi indirdik.
+
+name_site = input("What is sites link : ")
+#web sitemizin klavyeden girişi aldık ve bir değişkene atadık.
+
+html = urllib.request.urlopen(name_site)
+#Kaynak kodunu web siteden çektik.
+
+print(html.read())
+#Kaynak kodların ekranda görünmesi için read() fonksiyonunu kullandık.
